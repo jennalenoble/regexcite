@@ -2,9 +2,13 @@ Package: regexcite
 Title: Make Regular Expressions More Exciting
 Version: 0.0.0.9000
 Authors@R: 
-    person("Jenna", "Le Noble", , "jenna_lenoble@hotmail.com", role = c("aut", "cre")
+    person("Jenna", "Le Noble", , "jenna_lenoble@hotmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: Convenience functions to make some common tasks with string manipulation and regular expressions a bit easier.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
