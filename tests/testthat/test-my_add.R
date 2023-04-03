@@ -1,6 +1,7 @@
 test_that("my_add() adds two numbers", {
   expect_equal(my_add(1, 2), 3)
   expect_equal(my_add(2.5, 2.5), 5)
+  expect_equal(my_add(-5, 2), -3)
 })
 
 test_that("my_add() adds x to 10 when y is not specified", {
