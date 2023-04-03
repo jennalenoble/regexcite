@@ -47,7 +47,7 @@ stringr::str_split(x, pattern = ",")
 
 Notice how the return value is a **list** of length one, where the first
 element holds the character vector of parts. Often the shape of this
-output is inconvenient, i.e. we want the un-listed version.
+output is inconvenient, i.e. we want the un-listed version.
 
 That’s exactly what `regexcite::str_split_one()` does.
 
@@ -72,4 +72,21 @@ str_split_one(x, pattern = ",", n = 2)
 y <- "192.168.0.1"
 str_split_one(y, pattern = stringr::fixed("."))
 #> [1] "192" "168" "0"   "1"
+```
+
+Another useful function in regexcite is `my_add()`. This function adds
+two numbers (x,y) together. It returns `NA` if either parameter is `NA`
+and uses a default value of 10 for y.
+
+``` r
+library(regexcite)
+
+my_add(5,2)
+#> [1] 7
+
+my_add(5)
+#> [1] 15
+
+my_add(NA,6)
+#> [1] NA
 ```

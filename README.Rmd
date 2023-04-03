@@ -68,4 +68,15 @@ y <- "192.168.0.1"
 str_split_one(y, pattern = stringr::fixed("."))
 ```
 
+Another useful function in regexcite is `my_add()`. This function adds two numbers (x,y) together. It returns `NA` if either parameter is `NA` and uses a default value of 10 for y.
+
+```{r}
+library(regexcite)
+
+my_add(5,2)
+
+my_add(5)
+
+my_add(NA,6)
+```
 
